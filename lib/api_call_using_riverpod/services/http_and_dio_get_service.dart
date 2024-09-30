@@ -23,7 +23,7 @@ class HttpGetPost {
         log('Loaded ${posts.length} posts from local storage (offline mode)');
       } else {
         // Fetch from API if online
-        Uri postUri = Uri.parse('$_baseUrl$_endPoint');
+        Uri postUri = Uri.parse('$_baseUrl$_endPoint'); 
 
         Response response =
             await get(postUri).timeout(const Duration(seconds: 10));
